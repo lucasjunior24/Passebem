@@ -1,0 +1,10 @@
+﻿@model List<Passebem.Models.Estado>
+
+<div class="d-flex ">
+    @foreach (var item in Model)
+    {
+        <div class="">
+            <h1>@item.Nome - @item.UF</h1>
+        </div>
+    }
+</div>

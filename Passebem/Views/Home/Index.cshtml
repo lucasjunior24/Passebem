@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>Hello</h1>
+    </div>
+    <div class="col-md-offset-2 col-md-10">
+        @using (Html.BeginForm("ObterTodosEstados", "Home",
+FormMethod.Get, new { @class = "col-md-12 " }))
+        {
+            <button value="Estados" class="btn btn-primary" />
+        }
+    </div>
+    <br />
+    <a href="@Url.Action("ObterTodosEstados", "Home")" style="" class="btn btn-primary" title="Ver Estados">
+        oioi
+    </a>
+</body>
+</html>
