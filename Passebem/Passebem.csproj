@@ -154,6 +154,10 @@
     <Compile Include="Migrations\202210211725264_CriadoCidadesEPrevisaoClima.designer.cs">
       <DependentUpon>202210211725264_CriadoCidadesEPrevisaoClima.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202210211835468_AtualizandoRelacionamentoDasEntidades.cs" />
+    <Compile Include="Migrations\202210211835468_AtualizandoRelacionamentoDasEntidades.designer.cs">
+      <DependentUpon>202210211835468_AtualizandoRelacionamentoDasEntidades.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cidade.cs" />
     <Compile Include="Models\Estado.cs" />
@@ -168,6 +172,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Create.cshtml" />
     <Content Include="Views\Home\ObterTodosEstados.cshtml" />
+    <Content Include="Views\Home\OnterClima.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -184,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202210211725264_CriadoCidadesEPrevisaoClima.resx">
       <DependentUpon>202210211725264_CriadoCidadesEPrevisaoClima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210211835468_AtualizandoRelacionamentoDasEntidades.resx">
+      <DependentUpon>202210211835468_AtualizandoRelacionamentoDasEntidades.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,0 +1,19 @@
+﻿@model List<Passebem.Models.Cidade>
+
+<div class="d-flex ">
+    @foreach (var item in Model)
+    {
+        <div class="">
+            <h1>@item.Nome</h1>
+        </div>
+        foreach (var previcoes in item.PrevicoesDoClima)
+        {
+            <div class="">
+                <h1>temp. Min = @previcoes.TemperaturaMinima</h1>
+                <h1>temp. Max = @previcoes.TemperaturaMaxima</h1>
+                <h1>Dia  = @previcoes.DataPrevisao</h1>
+            </div>
+        }
+
+    }
+</div>

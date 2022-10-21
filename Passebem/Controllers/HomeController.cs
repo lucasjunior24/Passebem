@@ -2,6 +2,7 @@
 using Passebem.Data;
 using Passebem.Models;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
@@ -53,6 +54,20 @@ namespace Passebem.Controllers
             }
 
             return View(new List<Estado>());
+        }
+
+        [HttpGet]
+        public ActionResult OnterClima()
+        {
+            if (ModelState.IsValid)
+            {
+                var cidades = db.Cidades.AsNoTracking()
+                    .Include(c => c.PrevicoesDoClima).ToList();
+
+                return View(cidades);
+            }
+
+            return View(new List<Cidade>());
         }
     }
 }

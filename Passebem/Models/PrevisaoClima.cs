@@ -9,6 +9,8 @@ namespace Passebem.Models
         public int Id { get; set; }
         public TiposDeClima Clima { get; set; }
         public int CidadeId { get; set; }
+
+        public Cidade Cidade { get; set; }
         public DateTime DataPrevisao { get; set; }
         public int TemperaturaMaxima { get; set; }
         public int TemperaturaMinima { get; set; }

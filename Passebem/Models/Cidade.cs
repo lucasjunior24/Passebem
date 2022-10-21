@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Passebem.Models
 {
@@ -8,5 +9,7 @@ namespace Passebem.Models
         public int Id { get; set; }
         public string Nome { get; set; }
         public string EstadoId { get; set; }
+        public List<PrevisaoClima> PrevicoesDoClima { get; set; }
+        public Estado Estado { get; set; }
     }
 }
