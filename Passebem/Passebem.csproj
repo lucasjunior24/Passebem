@@ -149,9 +149,13 @@
     <Compile Include="Migrations\202210211543561_Inicial.designer.cs">
       <DependentUpon>202210211543561_Inicial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mapping\CidadeMapping.cs" />
+    <Compile Include="Migrations\202210211725264_CriadoCidadesEPrevisaoClima.cs" />
+    <Compile Include="Migrations\202210211725264_CriadoCidadesEPrevisaoClima.designer.cs">
+      <DependentUpon>202210211725264_CriadoCidadesEPrevisaoClima.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cidade.cs" />
-    <Compile Include="Models\Datetime.cs" />
     <Compile Include="Models\Estado.cs" />
     <Compile Include="Models\PrevisaoClima.cs" />
     <Compile Include="Models\TiposDeClima.cs" />
@@ -177,6 +181,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202210211543561_Inicial.resx">
       <DependentUpon>202210211543561_Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210211725264_CriadoCidadesEPrevisaoClima.resx">
+      <DependentUpon>202210211725264_CriadoCidadesEPrevisaoClima.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

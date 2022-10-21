@@ -10,19 +10,13 @@ namespace Passebem.Data
         }
 
         public DbSet<Estado> Estados { get; set; }
+        public DbSet<Cidade> Cidades { get; set; }
+        public DbSet<PrevisaoClima> PrevisoesDoClima { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
            
             base.OnModelCreating(modelBuilder);
         }
 
-
-
-        //protected override void OnModelCreating(ModelBuilder builder)
-        //{
-        //    builder.ApplyConfigurationsFromAssembly(typeof(BuscadorContext).Assembly);
-
-        //    base.OnModelCreating(builder);
-        //}
     }
 }
