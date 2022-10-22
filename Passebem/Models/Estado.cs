@@ -10,6 +10,6 @@ namespace Passebem.Models
         public string Nome { get; set; }
         public string UF { get; set; }
 
-        public <List<Cidade> Cidade { get; set; }
+        public List<Cidade> Cidade { get; set; }
     }
 }
