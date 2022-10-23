@@ -433,7 +433,6 @@
     <Content Include="wwwroot\lib\bootstrap\scss\_variables.scss" />
     <Content Include="wwwroot\lib\jquery-validation\LICENSE.md" />
     <Content Include="wwwroot\lib\jquery\dist\jquery.min.map" />
-    <Content Include="wwwroot\manifest.json" />
     <Content Include="wwwroot\lib\jquery\jquery.min.map" />
     <Content Include="wwwroot\lib\jquery\jquery.slim.min.map" />
   </ItemGroup>

@@ -33,7 +33,7 @@
     <meta name="theme-color" content="#00c177" />
 
     <!--Title-->
-    <title>@ViewData["Title"] - Buscador de prestadores de serviço</title>
+    <title>@ViewData["Title"]</title>
 
     <!-- Roboto fonts CSS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
@@ -52,24 +52,30 @@
     @RenderSection("Pagestyles", required: false)
 </head>
 <body>
-    @*<partial name="_MediaQuery" />*@
-
-    <!--Sidebar-->
 
 
     <div class="wrapper">
-        <div class="header bg-info">
+        <div class="header bg-dark">
             <div class="row no-gutters">
                 <div class="col-auto d-none d-sm-block mt-1">
                     <button class="btn btn-link menu-btn"><em class="mdi mdi-reorder-horizontal h3" aria-label="Menu"></em></button>
                 </div>
-                <div class="col text-center">
-                    <a href="@Url.Action("Index", "Home")" style="" class="btn btn-primary" title="Ver Clima">
+                <div class="col text-center d-flex  flex-row align-items-center justify-content-between " style="width: 20rem;">
 
-                    </a>
+                    <div class=" text-center d-flex flex-row align-items-center justify-content-between" style="width: 10rem; text-decoration: none;">
+                        <a href="@Url.Action("Sobre", "Home")" title="Ver Clima" style="text-decoration: none;">
+                            @*<em class="mdi mdi-account h3"></em>*@ Sobre
+                        </a>
+                        <a href="@Url.Action("OnterClima", "Home")" title="Ver Clima" style="text-decoration: none;">
+                            Clima
+                        </a>
+                    </div>
+                    <div >
+
+                    </div>
                 </div>
                 <div class="col-auto">
-                    <a href="@Url.Action("Index", "Home")" id="theme-dark" class="btn btn-link position-relative mt-1"><em class="mdi mdi-brightness-6 h3" aria-label="Alto Contraste"></em></a>
+                    @*<a href="@Url.Action("OnterClima", "Home")" id="theme-dark" class="btn btn-link position-relative mt-1"><em class="mdi mdi-brightness-6 h3" aria-label="Alto Contraste"></em></a>*@
                     <a href="#" class="btn btn-link position-relative mt-1"><em class="mdi mdi-bell-outline h3" aria-label="Notificações"></em><span class="counts">9+</span></a>
                 </div>
             </div>
@@ -78,13 +84,6 @@
 
         <div class="container">
             @RenderBody()
-            <partial name="_Footer" />
         </div>
-
-        <footer>
-            <partial name="_MenuFooterMobile" />
-        </footer>
-    </div>
-
 </body>
 </html>
