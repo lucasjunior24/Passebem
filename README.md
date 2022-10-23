@@ -2,6 +2,9 @@
 Esse projeto será usado como processo de seleção da Auvo
 
 
+![PASSEBEM](https://user-images.githubusercontent.com/53240060/197411704-c77d9551-845b-43b3-ac01-b301d70cf3a2.jpeg)
+
+
 Ele foi feito com .NetFramework 4.6.1
 Microsoft.AspNet.Mvc 5.2.7
 Bootstrap 5
