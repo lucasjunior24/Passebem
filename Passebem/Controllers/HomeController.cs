@@ -30,6 +30,10 @@ namespace Passebem.Controllers
         {
             return View();
         }
+        public ActionResult Sobre()
+        {
+            return View();
+        }
 
         public ActionResult Create()
         {

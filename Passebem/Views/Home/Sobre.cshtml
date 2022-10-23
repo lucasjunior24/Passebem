@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewData["Title"] = "Detalhes sobre o candidato";
+}
+
+<div class="d-none d-sm-block">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home" class="color-theme"><em class="mdi mdi-home"></em> Início</a></li>
+            <li class="breadcrumb-item active color-theme" aria-current="page">@ViewData["Title"]</li>
+        </ol>
+    </nav>
+</div>
+<div class="d-sm-none">
+    <h6 class="breadcrumb-item"><a asp-action="Index" asp-controller="Home" class="color-theme"><em class="mdi mdi-home"></em> Início</a></h6>
+</div>
+
+<hr />
+
+
+
+<div class="row">
+    <div class="col-md-4 pt-1">
+        <div class="card mb-2 pt-2">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-3 col-sm-4 col-md-12">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="~/wwwroot/imagem/eu.jpg" alt="Eu" style="width: 100%; height: 100%; border-radius: 50%;" class="" />
+                        </div>
+                    </div>
+                    <div class="col-9 col-sm-8 col-md-12 p-sm-3">
+                        <small class="text-muted">Nome</small>
+                        <h4>Lucas de Souza e Sousa</h4>
+                    </div>
+                    <div class="col p-sm-3">
+                        <div class="d-grid gap-2 pt-2">
+                            <h6>Alguem que busca sempre ser melhor</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8 pt-1">
+        <div class="card mb-2 pt-2">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 border-left-theme border-3">
+                        <div class="border-bottom-theme border-1">
+                            <small class="text-muted">Profissao</small>
+                            <h3>Desenvolvedor de Software</h3>
+                        </div>
+                    </div>
+                    <div class="col-12 border-left-theme border-3 pt-2">
+                        <div class="border-1">
+                            <small class="text-muted">Descricao</small>
+                            <h6>Descricao</h6>
+                        </div>
+                    </div>
+                    <div class="col-12 border-left-theme border-3 pt-2">
+                        <small class="text-muted">Curso ou Formaçao</small>
+                        <h6>Formado em Sistema de Informção</h6>
+                    </div>
+                    <div class="col-6 col-xl-3 col-md-6 pt-1">
+                        <small class="text-muted">Email</small>
+                        <h6>lucas11souza97@gmail.com</h6>
+                    </div>
+                    <div class="col-6 col-xl-3 col-md-6 pt-1">
+                        <small class="text-muted">Tempo de experiencia</small>
+                        <h6>Desenvolve a mais de 2 anos</h6>
+                    </div>
+
+                    <div class="col-6 col-xl-3 col-md-6 pt-1">
+                        <small class="text-muted">Telefone</small>
+                        <h6>69 98112-0993</h6>
+                    </div>
+                    <div class="col-6 col-xl-3 col-md-6 pt-1">
+                        <small class="text-muted"></small>
+                        <h6>TipoDeTrabalhador</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
