@@ -20,8 +20,14 @@
             @foreach (var cidade in Model.CidadesMaisFrias)
             {
 
-                <div class="card-body">
-                    <h6 class="card-title d-flex align-items-center justify-content-between "><span>@cidade.Cidade.Nome @diaSemana</span><span>Temp. Min = @cidade.TemperaturaMinima° Temp. Max = @cidade.TemperaturaMaxima°</span> </h6>
+                <div class="card-body m-0">
+                    <h6 class="card-title d-flex align-items-center justify-content-between m-0">
+                        <span>@cidade.Cidade.Nome </span>
+                        <span>
+                            <span class="mr-4 border rounded  p-1 bg-info text-white">Temp. Minima @cidade.TemperaturaMinima°</span>
+                            <span> Temp. Maxima: @cidade.TemperaturaMaxima°</span>
+                        </span>
+                    </h6>
                 </div>
 
             }
@@ -34,8 +40,14 @@
             @foreach (var cidade in Model.CidadesMaisQuestes)
             {
 
-                <div class="card-body">
-                    <h6 class="card-title d-flex align-items-center justify-content-between "><span>@cidade.Cidade.Nome </span><span>Temp. Min = @cidade.TemperaturaMinima° Temp. Max = @cidade.TemperaturaMaxima°</span> </h6>
+                <div class="card-body m-0">
+                    <h6 class="card-title d-flex align-items-center justify-content-between m-0">
+                        <span>@cidade.Cidade.Nome </span>
+                        <span>
+                            <span class="mr-4">Temp. Minima @cidade.TemperaturaMinima°</span>
+                            <span class="border rounded  p-1 bg-danger text-white"> Temp. Maxima: @cidade.TemperaturaMaxima°</span>
+                        </span>
+                    </h6>
                 </div>
 
             }
@@ -43,9 +55,9 @@
 
     </div>
 
-    <div class="mt-3 d-flex align-items-center justify-content-center">
-
-        <select class="form-control" id="cidadeSelecionada" style="width: 40rem;">
+    <div class="mt-3 d-flex flex-column align-items-center justify-content-center">
+        <h4>Cidade:</h4>  
+        <select class="form-control" id="cidadeSelecionada" style="width: 25rem;">
             <option value="">Selecione uma cidade...</option>
             @foreach (var item in Model.Cidades)
             {
