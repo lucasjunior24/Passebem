@@ -6,17 +6,21 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="@Url.Action("OnterClima", "Home")" class="color-theme" title="Ver Clima">
+                <a href="@Url.Action("OnterClima", "Home")" class="color-theme" style="text-decoration:none;" title="Ver Clima">
                     <em class="mdi mdi-home"></em> Início
                 </a>
             </li>
-           
+
             <li class="breadcrumb-item active color-theme" aria-current="page">@ViewData["Title"]</li>
         </ol>
     </nav>
 </div>
 <div class="d-sm-none">
-    <h6 class="breadcrumb-item"><a asp-action="Index" asp-controller="Home" class="color-theme"><em class="mdi mdi-home"></em> Início</a></h6>
+    <h6 class="breadcrumb-item">
+        <a href="@Url.Action("OnterClima", "Home")" class="color-theme" title="Ver Clima">
+            <em class="mdi mdi-home"></em> Início
+        </a>
+    </h6>
 </div>
 <hr />
 
@@ -30,14 +34,21 @@
                             <img src="~/wwwroot/imagem/eu.jpg" alt="Eu" style="width: 100%; height: 100%; border-radius: 50%;" class="" />
                         </div>
                     </div>
-                    <div class="col-9 col-sm-8 col-md-12 p-sm-3">
+                    <div class="col-9 col-sm-8 col-md-12 px-sm-2">
                         <small class="text-muted">Nome</small>
-                        <h4>Lucas de Souza e Sousa</h4>
+                        <h4 class="">Lucas de Souza e Sousa</h4>
                     </div>
-                    <div class="col p-sm-3">
-                        <div class="d-grid gap-2 pt-2">
-                            <h6>Alguem que busca sempre ser melhor</h6>
-                        </div>
+                    <div class="col-9 col-sm-8 col-md-12 px-sm-2">
+                        <small class="text-muted">Resumo das qualificações</small>
+                        <h6>
+                            Busco sempre alcançar os melhores resultados, assim como adoro ser desenvolvedor de software e usar a tecnologia para resolver problemas e ajudar pessoas
+                        </h6>
+                    </div>
+                    <div class="col-9 col-sm-8 col-md-12 px-sm-2">
+                        <small class="text-muted">Curiosidade</small>
+                        <h6>
+                            Meu TCC foi em C#, com .Net
+                        </h6>
                     </div>
                 </div>
             </div>
@@ -55,31 +66,78 @@
                         </div>
                     </div>
                     <div class="col-12 border-left-theme border-3 pt-2">
-                        <div class="border-1">
-                            <small class="text-muted">Descriçâo</small>
-                            <h6>Descriçâo</h6>
-                        </div>
+                        <small class="text-muted">Conhecimento</small>
+                        <h6>
+                            Experiência em desenvolvimento WEB com NET, C#, Entity, SQLserver, POO,
+                            DOCKER, NET Core, Jquery, Bootstrap 4 e 5, Javascript, HTML, CSS, git, Testes de Integração, Testes
+                            Unitarios, APIs, SOLID, AZURE, SCRUM e Microsserviços
+                        </h6>
                     </div>
                     <div class="col-12 border-left-theme border-3 pt-2">
-                        <small class="text-muted">Curso ou Formação</small>
-                        <h6>Formado em Sistema de Informção</h6>
+                        <small class="text-muted">Experiência profissional</small>
+                        <h6>
+                            Estagio em Suporte técnico  – Energisa
+                        </h6>
+                        <h6>
+                            Estagio em BI – Secretaria de Finanças do Estado de Rondônia - SEFIN
+                        </h6>
+                        <h6>
+                            Desenvolvedor FULLSTACK C# – freelance
+                        </h6>
+                        <h6>
+                            Desenvolvedor FULLSTACK C# – Superintendência Estadual de Tecnologia da
+                            Informação e Comunicação - SETIC á 1 ano e meio
+                        </h6>
                     </div>
-                    <div class="col-6 col-xl-3 col-md-6 pt-1">
+                    <div class="col-12 border-left-theme border-3 pt-2">
+                        <small class="text-muted">
+                            Projetos atuais
+                        </small>
+                        <h6>
+                            Entrega do Portal do Cidadão do Estado de Rondônia, sistema desenvolvido com Net
+                            5. https://portaldocidadao.ro.gov.br/
+                            Trabalhando também na correção de bugs em sistemas antigos da Superintendência,
+                            como o VISAON – Sistema de Vigilância Sanitária Online, e o portal do Servidor do
+                            estado
+                        </h6>
+                    </div>
+
+                    <div class="col-12 border-left-theme border-3 pt-2">
+                        <small class="text-muted">Estudando</small>
+                        <h6>ReactJS, React Native, NodeJs e Typescript com Projetos pessoais</h6>
+                    </div>
+
+                    <div class="col-6 col-md-6 border-left-theme border-3 pt-2">
+                        <small class="text-muted">Layout do App que estou desenvolvendo com React Native </small>
+                        <h6 class="p-1"><a href="https://github.com/lucasjunior24" class="text-bg-danger p-1" style="text-decoration:none;" target="_blank">Layout App</a></h6>
+                    </div>
+                    <div class="col-6 col-md-6 pt-2">
                         <small class="text-muted">Email</small>
                         <h6>lucas11souza97@gmail.com</h6>
                     </div>
-                    <div class="col-6 col-xl-3 col-md-6 pt-1">
+                    <div class="col-6 col-md-6 border-left-theme border-3 pt-2">
+                        <small class="text-muted">Curso ou Formação</small>
+                        <h6>Bacharel em Sistema de Informção</h6>
+                    </div>
+                    <div class="col-6 col-md-6 pt-2">
                         <small class="text-muted">Tempo de experiencia</small>
                         <h6>Desenvolve a mais de 2 anos</h6>
                     </div>
-
-                    <div class="col-6 col-xl-3 col-md-6 pt-1">
+                    <div class="col-6 col-xl-3 col-md-6 pt-1 border-left-theme border-3 ">
                         <small class="text-muted">Telefone</small>
                         <h6>69 98112-0993</h6>
                     </div>
                     <div class="col-6 col-xl-3 col-md-6 pt-1">
-                        <small class="text-muted"></small>
-                        <h6>TipoDeTrabalhador</h6>
+                        <small class="text-muted">Idade</small>
+                        <h6>24 Anos</h6>
+                    </div>
+                    <div class="col-6 col-xl-3 col-md-6 pt-1">
+                        <small class="text-muted">GitHub</small>
+                        <h6 class="p-1"><a href="https://github.com/lucasjunior24" class="text-bg-primary " style="text-decoration:none;" target="_blank">Meu GitHub</a></h6>
+                    </div>
+                    <div class="col-6 col-xl-3 col-md-6 pt-1">
+                        <small class="text-muted">Residindo</small>
+                        <h6>Porto Velho - RO</h6>
                     </div>
                 </div>
             </div>
