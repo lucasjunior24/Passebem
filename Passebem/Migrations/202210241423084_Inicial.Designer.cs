@@ -7,13 +7,13 @@ namespace Passebem.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class CriadoCidadesEPrevisaoClima : IMigrationMetadata
+    public sealed partial class Inicial : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CriadoCidadesEPrevisaoClima));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Inicial));
         
         string IMigrationMetadata.Id
         {
-            get { return "202210211725264_CriadoCidadesEPrevisaoClima"; }
+            get { return "202210241423084_Inicial"; }
         }
         
         string IMigrationMetadata.Source

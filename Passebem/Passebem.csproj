@@ -231,38 +231,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="ViewModel\CidadesMaisFriasVielModel.cs" />
-    <Compile Include="ViewModel\CidadeTemperaturas.cs" />
+    <Compile Include="Migrations\202210241423084_Inicial.cs" />
+    <Compile Include="Migrations\202210241423084_Inicial.designer.cs">
+      <DependentUpon>202210241423084_Inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ViewModel\ClimaViewModel.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Data\PassaBemContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202210211543561_Inicial.cs" />
-    <Compile Include="Migrations\202210211543561_Inicial.designer.cs">
-      <DependentUpon>202210211543561_Inicial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Mapping\CidadeMapping.cs" />
-    <Compile Include="Migrations\202210211725264_CriadoCidadesEPrevisaoClima.cs" />
-    <Compile Include="Migrations\202210211725264_CriadoCidadesEPrevisaoClima.designer.cs">
-      <DependentUpon>202210211725264_CriadoCidadesEPrevisaoClima.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202210211835468_AtualizandoRelacionamentoDasEntidades.cs" />
-    <Compile Include="Migrations\202210211835468_AtualizandoRelacionamentoDasEntidades.designer.cs">
-      <DependentUpon>202210211835468_AtualizandoRelacionamentoDasEntidades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202210212031266_AtualizadoEstados.cs" />
-    <Compile Include="Migrations\202210212031266_AtualizadoEstados.designer.cs">
-      <DependentUpon>202210212031266_AtualizadoEstados.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cidade.cs" />
     <Compile Include="Models\Estado.cs" />
     <Compile Include="Models\PrevisaoClima.cs" />
     <Compile Include="Models\TiposDeClima.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModel\CidadesMaisQuestesVielModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -302,7 +286,6 @@
     <Content Include="Views\Shared\_Sidebar.cshtml" />
     <Content Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
     <Content Include="Views\Home\_ClimaPorCidade.cshtml" />
-    <Content Include="README.md" />
     <Content Include="Views\Home\Sobre.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -437,17 +420,8 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202210211543561_Inicial.resx">
-      <DependentUpon>202210211543561_Inicial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202210211725264_CriadoCidadesEPrevisaoClima.resx">
-      <DependentUpon>202210211725264_CriadoCidadesEPrevisaoClima.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202210211835468_AtualizandoRelacionamentoDasEntidades.resx">
-      <DependentUpon>202210211835468_AtualizandoRelacionamentoDasEntidades.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202210212031266_AtualizadoEstados.resx">
-      <DependentUpon>202210212031266_AtualizadoEstados.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202210241423084_Inicial.resx">
+      <DependentUpon>202210241423084_Inicial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
