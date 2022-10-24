@@ -163,14 +163,8 @@
     <Content Include="wwwroot\css\app.css" />
     <Content Include="wwwroot\css\global.css" />
     <Content Include="wwwroot\css\inicio\swiper.css" />
-    <Content Include="wwwroot\css\servico\buscar.css" />
-    <Content Include="wwwroot\css\servico\detalhes.css" />
-    <Content Include="wwwroot\css\servico\index.css" />
-    <Content Include="wwwroot\css\servico\solicitarServico.css" />
-    <Content Include="wwwroot\css\servico\todos.css" />
     <Content Include="wwwroot\css\site.css" />
     <Content Include="wwwroot\css\swiper.css" />
-    <Content Include="wwwroot\favicon.ico" />
     <Content Include="wwwroot\imagem\eu.jpg" />
     <Content Include="wwwroot\js\app.js" />
     <Content Include="wwwroot\lib\bootstrap\css\bootstrap-grid.css" />
@@ -220,11 +214,6 @@
     <Content Include="wwwroot\lib\jquery\jquery.slim.min.js" />
     <Content Include="wwwroot\lib\jquery\LICENSE.txt" />
     <Content Include="wwwroot\service-worker.js" />
-    <Content Include="wwwroot\servico\buscar.css" />
-    <Content Include="wwwroot\servico\detalhes.css" />
-    <Content Include="wwwroot\servico\index.css" />
-    <Content Include="wwwroot\servico\solicitarServico.css" />
-    <Content Include="wwwroot\servico\todos.css" />
     <Content Include="wwwroot\vendor\cookie\jquery.cookie.js" />
     <Content Include="wwwroot\vendor\swiper\css\swiper.min.css" />
     <Content Include="wwwroot\vendor\swiper\js\swiper.min.js" />
