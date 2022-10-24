@@ -57,7 +57,7 @@ Abra o banco de dados e verifique se as tabelas foram criadas,
 
 Se estiver sido, voce deverar popular o banco
 
-Para popular o banco, abra o arquivo CopiaDoBarna no banco de dados
+Para popular o banco, abra o arquivo CopiaDoBanco no banco de dados SQLServer
 
 Depois dele abrir no SQLServer
 
